@@ -5,6 +5,7 @@
  * Designed by 南小北 (https://lee.so/)
  * Updated in 2021.8.24
  */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Neuton:wght@700;800&display=swap');
 
 /* Theme
  -------------------------------------------------- */
@@ -18,11 +19,12 @@
   --footer: calc(8rem + var(--safe-bottom));
 
   --light: 255, 255, 255;
-  --dark: 22, 22, 22;
-  --hljs-bg: #111;
+  --dark:  76, 88, 155;
+  --hljs-bg: #242943;
 
   --safe-bottom: 0;
 }
+
 
 @supports (bottom: constant(safe-area-inset-bottom)) {
   :root {
@@ -37,9 +39,9 @@
 }
 
 .dark {
-  --light: 22, 22, 22;
+  --light: 36, 41, 67;
   --dark: 255, 255, 255;
-  --hljs-bg: #282828;
+  --hljs-bg: #242943;
 }
 
 *,
@@ -72,8 +74,7 @@ body {
   padding-right: var(--gap);
   padding-left: var(--gap);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-    'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   font-size: 2rem;
   line-height: 1.8;
   color: var(--pro);
@@ -108,9 +109,10 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Neuton", serif;
   margin: 0;
   font-size: inherit;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.2;
 }
 
@@ -196,11 +198,12 @@ img {
 }
 
 .site-name {
+  font-family: "Neuton", serif;
   max-width: calc(100% - 2rem - 3rem);
   padding-bottom: 0.3rem;
   overflow: auto;
   font-size: 3.4rem;
-  font-weight: 700;
+  font-weight: 800;
   white-space: nowrap;
 }
 
@@ -241,7 +244,7 @@ img {
 }
 
 .dark .social a {
-  filter: invert(1);
+  filter: invert(.6);
 }
 
 @media (max-width: 420px) {
