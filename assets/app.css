@@ -170,6 +170,10 @@ textarea:-webkit-autofill {
   box-shadow: 0 0 0 6rem var(--white) inset;
 }
 
+input[type="text"] {
+  background: #fff;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -221,7 +225,7 @@ img {
 
 .menu {
   display: flex;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .menu a + a {
@@ -311,7 +315,7 @@ img {
 
 /* Post entry
  -------------------------------------------------- */
- .post-entry-content, .post-entry, .h-entry {
+ .post-entry-content, .post-entry {
   position: relative;
   padding-block: 2rem;
   transition: transform 0.1s;
@@ -351,18 +355,30 @@ hr.post-separator:before {
   font-size: 4rem;
 }
 
+.post {
+  border-bottom: 1px solid var(--pro);
+}
+
+.archive-entry {
+  margin: 10px 0;
+}
+
 /* Post single
  -------------------------------------------------- */
 .post-title {
   margin-bottom: calc(var(--y-gap) + 1rem);
 }
 
-.post-title p {
+.post-title p, .post-date {
   display: flex;
   margin-bottom: 1.5rem;
   font-size: 1.6rem;
   color: var(--air);
   transform: translateY(0.4rem);
+}
+
+a.post-date.u-url {
+  border-bottom: none;
 }
 
 .post-title p span::before {
@@ -498,7 +514,7 @@ hr.post-separator:before {
   margin-inline: auto;
 }
 
-.post-content a, .h-entry a {
+.post-content a, .archive-entry a {
   padding-bottom: 0.2rem;
   font-weight: 500;
   border-bottom: 2px solid var(--pro);
