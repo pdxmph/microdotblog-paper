@@ -2,4 +2,4 @@
 
 {{ $tags := split $tags_list " " }} 
 
-{{ range $tags }}<a href="https://social.lol/tags/{{ substr . 1 }}">{{ . }}</a>&nbsp;{{ end }}
+<i class="fa-brands fa-mastodon"></i> {{ range $tags }}<a href="https://social.lol/tags/{{ substr . 1 }}">{{ . }}</a>&nbsp;{{ end }}
